@@ -1,0 +1,715 @@
+#screen-medium-devices {
+  display: none;
+}
+
+#screen-small {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.kube-top-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.kube-line {
+  margin-top: -0.2%;
+}
+
+.kube-top-nav-left-item {
+  float: left;
+}
+
+.kube-top-nav-left-item-image {
+  float: left;
+}
+
+.kube-top-nav-left-item a {
+  display: block;
+  color: #272727;
+  font-family: 'Josefin Sans';
+  font-size: 1.2em;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+}
+
+.kube-top-nav-left-item a:hover {
+  color: #D81D4E;
+}
+
+.kube-top-nav-left-item-image a {
+  display: block;
+  color: #272727;
+  font-family: 'Josefin Sans';
+  font-size: 1.2em;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer
+}
+
+.kube-top-nav-right-item {
+  float: right;
+}
+
+.kube-top-nav-right-item a {
+  display: block;
+  color: #272727;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3em;
+  font-weight: 300;
+  text-align: center;
+  padding: 39px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.kube-top-nav-right-item a:hover {
+  display: block;
+  color: #272727;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-align: center;
+  padding: 39px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.kube-issue-story-footer {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3em;
+  color: #000;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.kube-logo {
+  width: 70px;
+}
+
+.kube-tech-card-transition {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+
+.kube-issue-no {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #326de6;
+  font-size: 1.8em;
+}
+
+.kube-issue-date {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000;
+  font-size: 1.8em;
+  margin-left: -2%;
+}
+
+.kube-issue-date:hover {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #326de6;
+  font-size: 1.8em;
+  margin-left: -2%;
+  cursor: pointer;
+}
+
+.kube-issue-editorial {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: left;
+  font-weight: 200;
+}
+
+.kube-issue-editorial:hover {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+  margin-top: 1%;
+  cursor: pointer;
+  color: #326de6;
+  margin-bottom: 1%;
+  text-align: left;
+  font-weight: 200;
+}
+
+.kube-issue-stories {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000;
+  font-size: 1.8em;
+}
+
+.kube-issue-story-header {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6em;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.kube-issue-story-header:hover {
+  color: #326de6;
+}
+
+.kube-issue-story-author {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3em;
+  color: #000;
+  font-weight: 100;
+}
+
+.kube-issue-story-abstract {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3em;
+  color: #000;
+  font-weight: 100;
+}
+
+.kube-official-card {
+  width: 100%;
+  height: 200px;
+  background-color: #f9f9f9;
+}
+
+.kube-official-card-header {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8em;
+  color: #000;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-weight: 400;
+}
+
+.kube-official-card-emails {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8em;
+  color: #000;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-weight: 400;
+  margin-top: 10%;
+}
+
+.kube-official-card-text{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  font-size: 1.2em;
+}
+
+.kube-subscribe-email {
+  border: 1px solid #ebebeb;
+  height: 50px;
+  width: 100%;
+  border-radius: 25px;
+  padding-left: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+.kube-subscribe-button {
+  display: block;
+  width: 50%;
+  height: 50px;
+  text-align: center;
+  padding: 14px;
+  background-color: #326de6;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.1em;
+  border-radius: .375rem;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.kube-header {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 1.5em;
+  margin-bottom: 1%;
+}
+
+.kube-header-team {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 1.5em;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.kube-normal-team {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  color: #326de6;
+  font-size: 1.3em;
+  margin-bottom: 4%;
+  cursor: pointer;
+}
+
+.kube-inputs {
+  width: 90%;
+  height: 70px;
+  padding: 12px;
+  margin-top: 4%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  border: 1px solid #ebebeb;
+  border-radius: .375rem;
+}
+
+.kube-input-btn {
+  width: 90%;
+  height: 70px;
+  background-color: #326de6;
+  color: #fff;
+  padding: 18px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 8%;
+  cursor: pointer;
+  border-radius: .375rem;
+}
+
+.kube-text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3em;
+  color: #000;
+  margin-top: 1%;
+  text-align: justify;
+  font-weight: 300;
+}
+
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width:900px) and (max-device-width: 990px) {
+  #screen-medium-devices {
+    display: block;
+  }
+
+  #screen-large-devices {
+    display: none;
+  }
+
+  #screen-small {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:800px) and (max-device-width: 890px) {
+  #screen-medium-devices {
+    display: block;
+  }
+
+  #screen-large-devices {
+    display: none;
+  }
+
+  #screen-small {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:700px) and (max-device-width: 790px) {
+  #screen-medium-devices {
+    display: block;
+  }
+
+  #screen-large-devices {
+    display: none;
+  }
+
+  #screen-small {
+    display: none;
+  }
+
+  #screen-small {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:600px) and (max-device-width: 690px) {
+  #screen-medium-devices {
+    display: block;
+  }
+
+  #screen-large-devices {
+    display: none;
+  }
+
+  #screen-small {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:500px) and (max-device-width: 590px) {
+  #screen-medium-devices {
+    display: block;
+  }
+
+  #screen-large-devices {
+    display: none;
+  }
+
+  #screen-small {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:400px) and (max-device-width: 490px) {
+  #screen-medium-devices {
+    display: block;
+  }
+
+  #screen-large-devices {
+    display: none;
+  }
+
+  #screen-large {
+    display: none;
+  }
+
+  #screen-small {
+    display: block;
+  }
+
+  .kube-small-nav {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 12px;
+    cursor: pointer;
+  }
+
+  .kube-logo {
+    width: 30px;
+    margin-top: 2%;
+  }
+
+  .kube-issue-date {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000;
+    font-size: 1.8em;
+    margin-left: 1%;
+  }
+
+  .kube-top-nav-left-item {
+    float: left;
+  }
+  
+  .kube-top-nav-left-item-image {
+    float: left;
+  }
+  
+  .kube-top-nav-left-item a {
+    display: block;
+    color: #272727;
+    font-family: 'Josefin Sans';
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 300;
+    padding: 20px 16px;
+    text-decoration: none;
+  }
+  
+  .kube-top-nav-left-item a:hover {
+    font-weight: 400; 
+  }
+  
+  .kube-top-nav-left-item-image a {
+    display: block;
+    color: #272727;
+    font-family: 'Josefin Sans';
+    font-size: 1.2em;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer
+  }
+
+  .kube-top-nav {
+    list-style-type: none;
+    margin-left: -5%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    width: 106%;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  }
+
+  .kube-line {
+    margin-top: 20%;
+    width: 100;
+    border-color: #fff;
+  }
+}
+
+@media only screen and (min-width:340px) and (max-device-width: 390px) {
+  #screen-medium-devices {
+    display: block;
+  }
+
+  #screen-large-devices {
+    display: none;
+  }
+
+  #screen-large {
+    display: none;
+  }
+
+  #screen-small {
+    display: block;
+  }
+
+  .kube-header-team {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 1.5em;
+    margin-top: 4%;
+    margin-bottom: 5%;
+  }
+  
+  .kube-normal-team {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: #326de6;
+    font-size: 1.3em;
+    margin-top: 300px;
+    cursor: pointer;
+  }
+
+  .kube-small-nav {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 12px;
+    cursor: pointer;
+  }
+
+  .kube-logo {
+    width: 30px;
+    margin-top: 2%;
+  }
+
+  .kube-issue-date {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000;
+    font-size: 1.8em;
+    margin-left: 1%;
+  }
+
+  .kube-top-nav-left-item {
+    float: left;
+  }
+  
+  .kube-top-nav-left-item-image {
+    float: left;
+  }
+  
+  .kube-top-nav-left-item a {
+    display: block;
+    color: #272727;
+    font-family: 'Josefin Sans';
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+  }
+  
+  .kube-top-nav-left-item a:hover {
+    font-weight: 400;
+  }
+  
+  .kube-top-nav-left-item-image a {
+    display: block;
+    color: #272727;
+    font-family: 'Josefin Sans';
+    font-size: 1.2em;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer
+  }
+
+  .kube-top-nav {
+    list-style-type: none;
+    margin-left: -5%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    width: 106%;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  }
+
+  .kube-line {
+    margin-top: 20%;
+    width: 100;
+    border-color: #fff;
+  }
+}
+
+@media only screen and (min-width:300px) and (max-device-width: 339px) {
+  #screen-medium-devices {
+    display: block;
+  }
+
+  #screen-large-devices {
+    display: none;
+  }
+
+  #screen-large {
+    display: none;
+  }
+
+  #screen-small {
+    display: block;
+  }
+
+  .kube-header-team {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 1.5em;
+    margin-top: 4%;
+    margin-bottom: 5%;
+  }
+  
+  .kube-normal-team {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: #326de6;
+    font-size: 1.3em;
+    margin-top: 300px;
+    cursor: pointer;
+  }
+
+  .kube-small-nav {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 12px;
+    cursor: pointer;
+  }
+
+  .kube-logo {
+    width: 30px;
+    margin-top: 2%;
+  }
+
+  .kube-issue-date {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000;
+    font-size: 1.8em;
+    margin-left: 1%;
+  }
+
+  .kube-top-nav-left-item {
+    float: left;
+  }
+  
+  .kube-top-nav-left-item-image {
+    float: left;
+  }
+  
+  .kube-top-nav-left-item a {
+    display: block;
+    color: #272727;
+    font-family: 'Josefin Sans';
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: center;
+    padding: 20px 10px;
+    text-decoration: none;
+  }
+  
+  .kube-top-nav-left-item a:hover {
+    font-weight: 400;
+  }
+  
+  .kube-top-nav-left-item-image a {
+    display: block;
+    color: #272727;
+    font-family: 'Josefin Sans';
+    font-size: 1.2em;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer
+  }
+
+  .kube-top-nav {
+    list-style-type: none;
+    margin-left: -5%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    width: 106%;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  }
+
+  .kube-line {
+    margin-top: 20%;
+    width: 100;
+    border-color: #fff;
+  }
+}
