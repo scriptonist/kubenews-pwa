@@ -3,7 +3,7 @@ import Api from '@/services/Api.js'
 export default {
   // ----- Fetch Daily Issue -----
   fetchIssue () {
-    return Api().get()
+    return Api().get('/issue')
   },
   // ----- End -----
   // ----- Fetch Issue Archive -----

@@ -1,3 +1,4 @@
+import NewsServices from '@/services/NewsClientServices'
 export default {
   data () {
     return {
@@ -9,6 +10,9 @@ export default {
       newsCount: 0
     }
   },
+  mounted () {
+    this.issue()
+  },
   methods: {
     goNext: function (paths) {
       if (paths === '/') {
@@ -16,6 +20,11 @@ export default {
       } else {
         this.$router.push({path: '/' + paths})
       }
+    },
+    issue: async function () {
+      await NewsServices.fetchIssue().then(response => {
+        this.newsData = response.data
+      })
     }
   }
 }
