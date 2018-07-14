@@ -107,14 +107,14 @@
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <div class="kube-subscribe">
-                <input type="email" class="kube-subscribe-email" placeholder="Email Address"/>
+                <input type="email" v-model="userEmail" class="kube-subscribe-email" placeholder="Email Address"/>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <center>
-                <div class="kube-subscribe-button">
+                <div v-on:click="subscribe" class="kube-subscribe-button">
                   Subscribe
                 </div>
               </center>
@@ -181,14 +181,14 @@
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <div class="kube-subscribe">
-                <input type="email" class="kube-subscribe-email" placeholder="Email Address"/>
+                <input type="email" v-model="userEmail" class="kube-subscribe-email" placeholder="Email Address"/>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <center>
-                <div  style="margin-bottom:3%;" class="kube-subscribe-button">
+                <div v-on:click="subscribe" style="margin-bottom:3%;" class="kube-subscribe-button">
                   Subscribe
                 </div>
               </center>
@@ -201,8 +201,9 @@
 </template>
 <script>
 import NewsComponentMixin from '../mixins/NewsComponentMixin.js'
+import SubscribeMixin from '../mixins/SubscribeMixin.js'
 export default {
-  mixins: [NewsComponentMixin]
+  mixins: [NewsComponentMixin, SubscribeMixin]
 }
 </script>
 <style scoped src='../../assets/css/about.css'>

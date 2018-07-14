@@ -2,12 +2,7 @@ import NewsServices from '@/services/NewsClientServices'
 export default {
   data () {
     return {
-      enterButton: false,
-      width: 0,
-      id: 0,
-      newsData: [],
-      finalNews: [],
-      newsCount: 0
+      newsData: []
     }
   },
   mounted () {

@@ -18,12 +18,12 @@ export default {
   // ----- End -----
   // ----- Email Subscription -----
   subscribe (userData) {
-    return Api().post('a', userData)
+    return Api().post('/subscribe?email=' + userData)
   },
   // ----- End -----
   // ----- Submit User Story -----
   submitStory (userData) {
-    return Api().post('a', userData)
+    return Api().post('/story', userData)
   }
   // ----- End -----
 }
