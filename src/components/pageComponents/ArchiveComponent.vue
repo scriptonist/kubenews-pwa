@@ -189,6 +189,7 @@
         </div>
       </div>
     </div>
+    <div id="snackbar">{{ mssg }}</div>
   </div>
 </template>
 <script>

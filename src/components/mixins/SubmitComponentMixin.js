@@ -10,6 +10,7 @@ export default {
     }
   },
   methods: {
+    // ----- Route Other Component -----
     goNext: function (paths) {
       if (paths === '/') {
         this.$router.push({path: '/'})
@@ -17,6 +18,8 @@ export default {
         this.$router.push({path: '/' + paths})
       }
     },
+    // ----- End -----
+    // ----- Method to Submit Story -----
     submitStory: async function (e) {
       await NewsServices.submitStory({
         author: this.name,
@@ -24,15 +27,26 @@ export default {
         title: this.title,
         description: this.email
       }).then(response => {
-        this.mssg = response.data
+        this.mssg = 'Story submitted successfully :)'
         this.author = ''
         this.email = ''
         this.url = ''
         this.title = ''
         this.description = ''
         this.name = ''
+        this.snack()
         e.preventDefault()
       })
+    },
+    // ----- End -----
+    // ----- Method For Displaying Toast -----
+    snack: function () {
+      var x = document.getElementById('snackbar')
+      x.className = 'show'
+      setTimeout(function () {
+        x.className = x.className.replace('show', '')
+      }, 3000)
     }
+    // ----- End -----
   }
 }
