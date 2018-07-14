@@ -12,8 +12,8 @@ export default {
   },
   // ----- End -----
   // ----- Fetch Particular Issue -----
-  fetchOneIssue () {
-    return Api().get()
+  fetchOneIssue (date) {
+    return Api().get('/issue/' + date)
   },
   // ----- End -----
   // ----- Email Subscription -----

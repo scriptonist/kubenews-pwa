@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <ul class="kube-top-nav">
-            <li class="kube-top-nav-left-item-image" v-on:click="goNext('news')">
+            <li class="kube-top-nav-left-item-image" v-on:click="goNext('/')">
               <a>
                 <img class="kube-logo" src="../../assets/images/kubenews.png">
               </a>
@@ -52,70 +52,84 @@
     <div id="screen-large-devices" class="container" style="margin-top:2%;">
       <div class="row">
         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-            <div class="kube-issue-no">#1</div>
-          </div>
-          <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-            <div class="kube-issue-date">Tuesday, July 2, 2018</div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="kube-issue-editorial">
-              Kubernetes is an open source system for managing containerized
-              applications across multiple hosts; providing basic mechanisms for
-              deployment, maintenance, and scaling of applications.<br>
-              Kubernetes is an open source system for managing containerized
-              applications across multiple hosts; providing basic mechanisms for
-              deployment, maintenance, and scaling of applications.
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-date" style="margin-left:0.1%;">{{issueData.createdAt}}</div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-editorial" style="font-weight: 400;">
+                {{issueData.title}}
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-editorial">
+                {{issueData.description}}
+              </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <hr>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="kube-issue-stories">
-              Stories
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <hr>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <a class="kube-issue-story-header">
-              Security in Kubernetes
-            </a>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="kube-issue-story-author">
-              Keith Dan
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-stories">
+                Stories
+              </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="kube-issue-story-abstract">
-              Kubernetes is an open source system for managing containerized apps
-              across multiple hosts, providing basic mechanisms for deployment
+          <div class="row" v-for="story in issueData.stories">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <a v-bind:href="story.url" class="kube-issue-story-header">
+                {{story.title}}
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-story-author">
+                {{story.author}}
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-story-abstract">
+                {{story.description}}
+              </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <hr>
-          </div>
-          <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-            <div class="kube-issue-stories">
-              GitHub
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <hr>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <a class="kube-issue-story-header">
-              kubernetes/kubernetes
-            </a>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="kube-issue-story-abstract">
-              Production-Grade Container Scheduling and Management
+          <div class="row">
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+              <div class="kube-issue-stories">
+                GitHub
+              </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <hr>
+          <div class="row" v-for="github in issueData.githublinks">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <a v-bind:href="github.url" class="kube-issue-story-header">
+                {{github.name}}
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-story-abstract">
+                {{github.description}}
+              </div>
+            </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="kube-issue-story-footer">
-              Archive
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div v-on:click="goNext('archive')" class="kube-issue-story-footer">
+                Archive
+              </div>
             </div>
           </div>
         </div>
@@ -165,70 +179,88 @@
     <div id="screen-medium-devices" class="container" style="margin-top:2%;">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-            <div class="kube-issue-no">#1</div>
-          </div>
-          <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-            <div class="kube-issue-date">Tuesday, July 2, 2018</div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="kube-issue-editorial">
-              Kubernetes is an open source system for managing containerized
-              applications across multiple hosts; providing basic mechanisms for
-              deployment, maintenance, and scaling of applications.<br>
-              Kubernetes is an open source system for managing containerized
-              applications across multiple hosts; providing basic mechanisms for
-              deployment, maintenance, and scaling of applications.
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-date" style="margin-left:0.1%;">{{issueData.createdAt}}</div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <hr>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="kube-issue-stories">
-              Stories
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-editorial" style="font-weight: 400;">
+                {{issueData.title}}
+              </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <a class="kube-issue-story-header">
-              Security in Kubernetes
-            </a>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="kube-issue-story-author">
-              Keith Dan
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-editorial">
+                {{issueData.description}}
+              </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="kube-issue-story-abstract">
-              Kubernetes is an open source system for managing containerized apps
-              across multiple hosts, providing basic mechanisms for deployment
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <hr>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <hr>
-          </div>
-          <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-            <div class="kube-issue-stories">
-              GitHub
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-stories">
+                Stories
+              </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <a class="kube-issue-story-header">
-              kubernetes/kubernetes
-            </a>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="kube-issue-story-abstract">
-              Production-Grade Container Scheduling and Management
+          <div class="row" v-for="story in issueData.stories">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <a v-bind:href="story.url" class="kube-issue-story-header">
+                {{story.title}}
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-story-author">
+                {{story.author}}
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-story-abstract">
+                {{story.description}}
+              </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <hr>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <hr>
+            </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div v-on:click="goNext('archive')" class="kube-issue-story-footer">
-              Archive
+          <div class="row">
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+              <div class="kube-issue-stories">
+                GitHub
+              </div>
+            </div>
+          </div>
+          <div class="row" v-for="github in issueData.githublinks">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <a v-bind:href="github.url" class="kube-issue-story-header">
+                {{github.name}}
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-story-abstract">
+                {{github.description}}
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div v-on:click="goNext('archive')" class="kube-issue-story-footer">
+                Archive
+              </div>
             </div>
           </div>
         </div>
@@ -279,10 +311,10 @@
   </div>
 </template>
 <script>
-import NewsComponentMixin from '../mixins/NewsComponentMixin.js'
+import ArchiveIssueComponentMixin from '../mixins/ArchiveIssueComponentMixin.js'
 import SubscribeMixin from '../mixins/SubscribeMixin.js'
 export default {
-  mixins: [NewsComponentMixin, SubscribeMixin]
+  mixins: [ArchiveIssueComponentMixin, SubscribeMixin]
 }
 </script>
 <style scoped src='../../assets/css/news.css'>

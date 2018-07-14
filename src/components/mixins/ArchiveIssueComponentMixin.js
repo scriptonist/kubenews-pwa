@@ -2,11 +2,12 @@ import NewsServices from '@/services/NewsClientServices'
 export default {
   data () {
     return {
-      newsData: []
+      newsData: [],
+      issueData: []
     }
   },
   mounted () {
-    this.archive()
+    this.oneIssue()
   },
   methods: {
     // ----- Method to Route to other components -----
@@ -18,16 +19,11 @@ export default {
       }
     },
     // ----- End -----
-    // ----- Method to Store and Go ArchiveIssue Component -----
-    goToIssue: function (issue) {
-      localStorage.setItem('issueDate', issue)
-      this.$router.push({path: '/issue'})
-    },
-    // ----- End -----
-    // ----- Method to fetch all issues -----
-    archive: async function () {
-      await NewsServices.fetchArchive().then(response => {
-        this.newsData = response.data
+    // ----- Method to fetch latest issues -----
+    oneIssue: async function () {
+      let issueDate = localStorage.getItem('issueDate')
+      await NewsServices.fetchOneIssue(issueDate).then(response => {
+        this.issueData = response.data
       })
     }
     // ----- End -----

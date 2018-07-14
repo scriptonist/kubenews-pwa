@@ -58,11 +58,11 @@
             </div>
           </div>
           <div class="row" v-for="issue in newsData">
-            <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-              <div class="kube-issue-date">{{issue.createdAt}}</div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div v-on:click="goToIssue(issue.createdAt)" class="kube-issue-date" style="margin-left:0.1%;">{{issue.createdAt}}</div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div class="kube-issue-editorial">
+              <div v-on:click="goToIssue(issue.createdAt)" class="kube-issue-editorial">
                 {{issue.title}}
               </div>
             </div>
@@ -112,7 +112,7 @@
             </div>
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <center>""
+                <center>
                   <div v-on:click="subscribe" class="kube-subscribe-button">
                     Subscribe
                   </div>
@@ -127,11 +127,11 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="row" v-for="issue in newsData">
-            <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-              <div class="kube-issue-date">{{issue.createdAt}}</div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div v-on:click="goToIssue(issue.createdAt)" class="kube-issue-date" style="margin-left:0.1%;">{{issue.createdAt}}</div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div class="kube-issue-editorial">
+              <div v-on:click="goToIssue(issue.createdAt)" class="kube-issue-editorial">
                 {{issue.title}}
               </div>
             </div>
