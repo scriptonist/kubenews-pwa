@@ -57,21 +57,22 @@
               <div class="kube-header">Archives</div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-              <div class="kube-issue-no">#1</div>
-            </div>
+          <div class="row" v-for="issue in newsData">
             <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-              <div class="kube-issue-date">Tuesday, July 2, 2018</div>
+              <div class="kube-issue-date">{{issue.createdAt}}</div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <div class="kube-issue-editorial">
-                Play with Kubernetes
+                {{issue.title}}
               </div>
             </div>
+          </div>
+          <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <hr>
             </div>
+          </div>
+          <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <div v-on:click="goNext('/')" class="kube-issue-story-footer">
                 Issues
@@ -125,24 +126,26 @@
     <div id="screen-medium-devices" class="container" style="margin-top:2%;">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-            <div class="kube-issue-no">#1</div>
-          </div>
-          <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-            <div class="kube-issue-date">Tuesday, July 2, 2018</div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="kube-issue-editorial">
-              Kubernetes is an open source system for managing containerized
-              applications across multiple hosts;
+          <div class="row" v-for="issue in newsData">
+            <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+              <div class="kube-issue-date">{{issue.createdAt}}</div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-issue-editorial">
+                {{issue.title}}
+              </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <hr>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <hr>
+            </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div v-on:click="goNext('/')" class="kube-issue-story-footer">
-              Issues
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div v-on:click="goNext('/')" class="kube-issue-story-footer">
+                Issues
+              </div>
             </div>
           </div>
         </div>

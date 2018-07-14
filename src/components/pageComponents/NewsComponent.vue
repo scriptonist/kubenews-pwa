@@ -88,7 +88,7 @@
           </div>
           <div class="row" v-for="story in newsData.stories">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <a class="kube-issue-story-header">
+              <a v-bind:href="story.url" class="kube-issue-story-header">
                 {{story.title}}
               </a>
             </div>
@@ -117,7 +117,7 @@
           </div>
           <div class="row" v-for="github in newsData.githublinks">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <a class="kube-issue-story-header">
+              <a v-bind:href="github.url" class="kube-issue-story-header">
                 {{github.name}}
               </a>
             </div>
@@ -215,7 +215,7 @@
           </div>
           <div class="row" v-for="story in newsData.stories">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <a class="kube-issue-story-header">
+              <a v-bind:href="story.url" target="_blank" class="kube-issue-story-header">
                 {{story.title}}
               </a>
             </div>
@@ -244,7 +244,7 @@
           </div>
           <div class="row" v-for="github in newsData.githublinks">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <a class="kube-issue-story-header">
+              <a v-bind:href="github.url" target="_blank" class="kube-issue-story-header">
                 {{github.name}}
               </a>
             </div>
