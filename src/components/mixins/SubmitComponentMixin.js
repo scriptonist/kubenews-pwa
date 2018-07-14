@@ -17,7 +17,7 @@ export default {
         this.$router.push({path: '/' + paths})
       }
     },
-    submitStory: async function () {
+    submitStory: async function (e) {
       await NewsServices.submitStory({
         author: this.name,
         url: this.url,
@@ -25,6 +25,12 @@ export default {
         description: this.email
       }).then(response => {
         this.mssg = response.data
+        this.author = ''
+        this.email = ''
+        this.url = ''
+        this.title = ''
+        this.description = ''
+        e.preventDefault()
       })
     }
   }
