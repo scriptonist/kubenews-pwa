@@ -30,6 +30,7 @@ export default {
         this.url = ''
         this.title = ''
         this.description = ''
+        this.name = ''
         e.preventDefault()
       })
     }
