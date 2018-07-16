@@ -8,9 +8,9 @@
       "type": "image/png"
     },
     {
-      "src": "/static/img/icons/android-icon-512x512.png",
+      "src": "/static/img/icons/kubeImg.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/jpeg"
     }
   ],
   "start_url": "/",
