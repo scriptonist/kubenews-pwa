@@ -1,6 +1,6 @@
 {
-  "name": "kubenews",
-  "short_name": "kubenews",
+  "name": "kubedaily",
+  "short_name": "kubedaily",
   "icons": [
     {
       "src": "/static/img/icons/android-icon-192x192.png",
