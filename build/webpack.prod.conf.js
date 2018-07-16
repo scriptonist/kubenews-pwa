@@ -104,7 +104,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     ]),
     // service worker caching
     new SWPrecacheWebpackPlugin({
-      cacheId: 'kubenews',
+      cacheId: 'kubedaily',
       filename: 'service-worker.js',
       staticFileGlobs: ['dist/**/*.{js,html,css,png}'],
       minify: true,
@@ -117,6 +117,10 @@ const webpackConfig = merge(baseWebpackConfig, {
         {
           urlPattern: /^https:\/\/fonts\.gstatic\.com\//,
           handler: 'cacheFirst'
+        },
+        {
+          urlPattern: /^http:\/\/localhost\:9000\/v1\/issue\/2017\-12\-12\//,
+          handler: 'networkFirst'
         }
       ]
     })

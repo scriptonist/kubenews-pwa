@@ -89,6 +89,6 @@
   });
 
   window.addEventListener('appinstalled', (evt) => {
-    app.logEvent('kubenews', 'installed');
+    app.logEvent('kubedaily', 'installed');
   });  
 })();
