@@ -59,10 +59,10 @@
           </div>
           <div class="row" v-for="issue in newsData">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div v-on:click="goToIssue(issue.createdAt)" class="kube-issue-date" style="margin-left:0.1%;">{{issue.createdAt}}</div>
+              <div v-on:click="goToIssue(issue.date)" class="kube-issue-date" style="margin-left:0.1%;">{{issue.createdAt}}</div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div v-on:click="goToIssue(issue.createdAt)" class="kube-issue-editorial">
+              <div v-on:click="goToIssue(issue.date)" class="kube-issue-editorial">
                 {{issue.title}}
               </div>
             </div>
@@ -124,10 +124,10 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="row" v-for="issue in newsData">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div v-on:click="goToIssue(issue.createdAt)" class="kube-issue-date" style="margin-left:0.1%;">{{issue.createdAt}}</div>
+              <div v-on:click="goToIssue(issue.date)" class="kube-issue-date" style="margin-left:0.1%;">{{issue.createdAt}}</div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div v-on:click="goToIssue(issue.createdAt)" class="kube-issue-editorial">
+              <div v-on:click="goToIssue(issue.date)" class="kube-issue-editorial">
                 {{issue.title}}
               </div>
             </div>

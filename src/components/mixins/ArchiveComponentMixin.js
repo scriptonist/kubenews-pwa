@@ -31,6 +31,7 @@ export default {
         this.newsData = response.data
         for (let i = 0; i < this.newsData.length; i++) {
           let create = this.newsData[i].createdAt
+          this.$set(this.newsData[i], 'date', create)
           this.newsData[i].createdAt = this.dateFormat(create)
         }
       })
