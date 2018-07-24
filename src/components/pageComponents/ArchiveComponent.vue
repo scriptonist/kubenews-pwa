@@ -122,6 +122,11 @@
     <div id="screen-medium-devices" class="container" style="margin-top:2%;">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="kube-header">Archives</div>
+            </div>
+          </div>
           <div class="row" v-for="issue in newsData">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <div v-on:click="goToIssue(issue.date)" class="kube-issue-date" style="margin-left:0.1%;">{{issue.createdAt}}</div>
