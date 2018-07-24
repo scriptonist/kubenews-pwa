@@ -141,17 +141,13 @@
           <div class="kube-official-card">
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="kube-official-card-header">kubedaily</div>
+                <div class="kube-official-card-header">kube.today</div>
               </div>
             </div>
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="kube-official-card-text">
-                  Are you a kubernetes dev ? Then
-                  you're at the right place. We are
-                  here to provide you with the latest
-                  news and updates that's happening
-                  in the kubernetes space.
+                  The kubernetes Newspaper.Handpicked kubernetes events,news and projects from all over the web at your fingertips.
                 </div>
               </div>
             </div>
@@ -265,17 +261,13 @@
           <div class="kube-official-card">
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="kube-official-card-header">kubedaily</div>
+                <div class="kube-official-card-header">kube.today</div>
               </div>
             </div>
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="kube-official-card-text">
-                  Are you a kubernetes dev ? Then
-                  you're at the right place. We are
-                  here to provide you with the latest
-                  news and updates that's happening
-                  in the kubernetes space.
+                  The kubernetes Newspaper.Handpicked kubernetes events,news and projects from all over the web at your fingertips.
                 </div>
               </div>
             </div>
